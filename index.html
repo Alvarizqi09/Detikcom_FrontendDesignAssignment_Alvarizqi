@@ -11,9 +11,12 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <script
+      src="https://kit.fontawesome.com/fa1e90f605.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <script src="script.js"></script>
     <header>
       <nav class="sticky bg-body-transparent">
         <div class="image">
@@ -110,35 +113,74 @@
       </section>
       <section class="didukung d-flex flex-column">
         <h3>DIDUKUNG OLEH</h3>
-        <div class="gap-5 flex-row d-flex marquee-container">
-          <div class="marquee-wrapper">
-            <div class="marquee-1">
-              <img src="Assets/alpha-jwc.png" alt="Image 1" />
+        <marquee
+          behavior="scroll"
+          direction="left"
+          class="marqueee d-flex flex-row"
+          scrollamount="20"
+          loop="infinite"
+        >
+          <article class="marquee-1">
+            <img src="Assets/alpha-jwc.png" alt="Image 1" />
+
+            <img src="Assets/alpha-jwc 1 (1).png" alt="Image 2" />
+
+            <img src="Assets/alpha-jwc 1.png" alt="Image 3" />
+
+            <img src="Assets/alpha-jwc 1 (3).png" alt="Image 5" />
+
+            <img src="Assets/alpha-jwc 1 (4).png" alt="Image 6" />
+
+            <img src="Assets/alpha-jwc 1 (5).png" alt="Image 7" />
+
+            <img src="Assets/alpha-jwc 1 (6).png" alt="Image 8" />
+          </article>
+        </marquee>
+      </section>
+      <section
+        class="carousel d-flex flex-column align-items-center justify-content-center"
+      >
+        <h3 class="sudirman">GALERI SUDIRMAN RUN 2022</h3>
+        <div class="product-imgs">
+          <div class="img-display">
+            <div class="img-showcase">
+              <img src="Assets/slider-1 1.png" alt="carousel image" />
+              <img src="Assets/slider-1 1 (1).png" alt="carousel image" />
+              <img src="Assets/slider-1 1 (2).png" alt="carousel image" />
+              <img src="Assets/slider-1 1 (3).png" alt="carousel image" />
             </div>
-            <div class="marquee-1">
-              <img src="Assets/alpha-jwc 1 (1).png" alt="Image 2" />
+          </div>
+          <div class="img-select gap-4 mt-3">
+            <div class="img-item">
+              <a href="#" data-id="1">
+                <img src="Assets/slider-1 1.png" alt="carousel image" />
+              </a>
             </div>
-            <div class="marquee-1">
-              <img src="Assets/alpha-jwc 1.png" alt="Image 3" />
+            <div class="img-item">
+              <a href="#" data-id="2">
+                <img src="Assets/slider-1 1 (1).png" alt="carousel image" />
+              </a>
             </div>
-            <div class="marquee-1">
-              <img src="Assets/alpha-jwc 1 (2).png" alt="Image 4" />
+            <div class="img-item">
+              <a href="#" data-id="3">
+                <img src="Assets/slider-1 1 (2).png" alt="carousel image" />
+              </a>
             </div>
-            <div class="marquee-1">
-              <img src="Assets/alpha-jwc 1 (3).png" alt="Image 5" />
-            </div>
-            <div class="marquee-1">
-              <img src="Assets/alpha-jwc 1 (4).png" alt="Image 6" />
-            </div>
-            <div class="marquee-1">
-              <img src="Assets/alpha-jwc 1 (5).png" alt="Image 7" />
-            </div>
-            <div class="marquee-1">
-              <img src="Assets/alpha-jwc 1 (6).png" alt="Image 8" />
+            <div class="img-item">
+              <a href="#" data-id="4">
+                <img src="Assets/slider-1 1 (3).png" alt="carousel image" />
+              </a>
             </div>
           </div>
         </div>
+        <button class="arrow left-arrow">
+          <i class="fa-solid fa-arrow-left"></i>
+        </button>
+        <button class="arrow right-arrow">
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
       </section>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>

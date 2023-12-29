@@ -259,35 +259,101 @@ nav {
   font-weight: 900;
   line-height: normal;
 }
-.marquee-container {
-  overflow: hidden;
-  white-space: nowrap;
-}
 
-.marquee-wrapper {
-  display: flex;
-  animation: marqueeAnimation 15s linear infinite;
-}
-
-.marquee-1 {
+.marqueee {
   padding: 15px 25px;
-  justify-content: center;
-  align-items: center;
   border-radius: 10px;
-  background: #fff;
-  margin-right: 10px;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .marquee-1 img {
   width: 216px;
   height: 94px;
+  display: inline-block;
+  white-space: nowrap;
+  background-color: white;
+  margin-right: 10px;
+  border-radius: 10px;
+  padding: 15px 25px;
 }
 
-@keyframes marqueeAnimation {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
+.carousel {
+  width: 1060px;
+  height: 850px;
+  display: inline-flex;
+  margin: 193px 191px;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel h3 {
+  color: #212427;
+  text-align: center;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  margin-bottom: 30px;
+}
+
+.carousel img {
+  width: 100%;
+  display: block;
+}
+
+.carousel .arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  color: white;
+}
+
+.carousel .left-arrow {
+  left: 20px;
+}
+
+.carousel .right-arrow {
+  right: 20px;
+}
+.carousel .img-display {
+  overflow: hidden;
+}
+.carousel .img-showcase {
+  display: flex;
+  flex-shrink: 0;
+  border-radius: 32px;
+  transition: all 0.5s ease;
+}
+
+.carousel .img-showcase img {
+  min-width: 100%;
+}
+.carousel .img-select {
+  display: flex;
+}
+
+.carousel .img-item img {
+  width: 100%;
+  display: block;
+  filter: grayscale(100%);
+  transition: filter 0.5s ease;
+}
+
+.carousel .img-item.active img {
+  filter: grayscale(0%);
+}
+
+.carousel .img-item:nth-child(1),
+.img-item:nth-child(2),
+.img-item:nth-child(3) {
+  margin-right: 0;
+}
+.carousel .img-item:hover {
+  opacity: 0.8;
 }
