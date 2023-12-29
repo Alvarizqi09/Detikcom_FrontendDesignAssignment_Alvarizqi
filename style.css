@@ -108,6 +108,10 @@ nav {
   line-height: normal;
   width: 120px;
 }
+.content ul li a {
+  text-decoration: none;
+  color: #212427;
+}
 
 .registrasi .registration {
   display: flex;
@@ -155,6 +159,21 @@ nav {
   height: 611px;
 }
 
+.daftar .card-kanan .card:hover {
+  background: var(
+    --primary-gradient,
+    linear-gradient(258deg, #326cff 0%, #59ffb9 100%)
+  );
+}
+
+.daftar .card-kanan .card img {
+  transition: transform 0.3s ease;
+}
+
+.daftar .card-kanan .card:hover img {
+  transform: scale(1.1);
+}
+
 .daftar .card-kanan h3 {
   color: #fff;
   text-align: left;
@@ -184,6 +203,13 @@ nav {
   margin-bottom: 27px;
 }
 
+.daftar .card-kiri .card-gratis:hover {
+  background: var(
+    --primary-gradient,
+    linear-gradient(258deg, #326cff 0%, #59ffb9 100%)
+  );
+}
+
 .daftar .card-kiri h3 {
   color: #fff;
   text-align: left;
@@ -206,6 +232,28 @@ nav {
   border-radius: 32px;
   background: linear-gradient(237deg, #59ffb9 -30.09%, #326cff 71.21%);
   width: 582px;
+}
+
+.daftar .card-kiri .card-special:hover {
+  background: var(
+    --primary-gradient,
+    linear-gradient(258deg, #326cff 0%, #59ffb9 100%)
+  );
+}
+
+.daftar .card-kiri .card-special:hover {
+  background: var(
+    --primary-gradient,
+    linear-gradient(258deg, #326cff 0%, #59ffb9 100%)
+  );
+}
+
+.daftar .card-kiri .card-special .rounded-start {
+  transition: transform 0.3s ease;
+}
+
+.daftar .card-kiri .card-special:hover .rounded-start {
+  transform: scale(1.1);
 }
 
 .daftar .card-kiri .card-special .special-title {
@@ -466,6 +514,14 @@ nav {
   font-weight: 500;
   line-height: normal;
   margin-top: 10px;
+}
+
+.article-isi .card-article img {
+  transition: transform 0.3s ease;
+}
+
+.article-isi .card-article:hover img {
+  transform: scale(1.1);
 }
 
 .buttonlihat {

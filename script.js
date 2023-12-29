@@ -95,3 +95,35 @@ function toggleActive(clickedBtn) {
 }
 
 toggleActive(articleBtn);
+
+function redirectToDetik() {
+  window.location.href =
+    "https://www.detik.com/search/searchall?query=fun+run&siteid=2";
+}
+
+function redirectToEventDetik() {
+  window.location.href = "https://event.detik.com/";
+}
+
+function redirectToEventDetik() {
+  window.location.href = "https://event.detik.com/";
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  const navLinks = document.querySelectorAll(".content ul li a");
+
+  navLinks.forEach(function (link) {
+    link.addEventListener("click", function (e) {
+      e.preventDefault();
+      const targetId = this.getAttribute("href").substring(1);
+      const targetElement = document.getElementById(targetId);
+
+      if (targetElement) {
+        window.scrollTo({
+          top: targetElement.offsetTop,
+          behavior: "smooth",
+        });
+      }
+    });
+  });
+});

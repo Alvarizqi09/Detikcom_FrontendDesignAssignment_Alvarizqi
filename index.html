@@ -17,7 +17,7 @@
     ></script>
   </head>
   <body>
-    <header>
+    <header id="landing-page">
       <nav class="sticky bg-body-transparent">
         <div class="image">
           <img
@@ -29,14 +29,16 @@
         </div>
         <div class="content">
           <ul>
-            <li>Home</li>
-            <li>Tentang Acara</li>
-            <li>Galeri</li>
-            <li>Berita</li>
+            <li><a href="#landing-page">Home</a></li>
+            <li><a href="#card-1">Tentang Acara</a></li>
+            <li><a href="#carousel">Galeri</a></li>
+            <li><a href="#article">Berita</a></li>
           </ul>
         </div>
         <div class="registrasi">
-          <button href="#" class="registration">Registrasi</button>
+          <button class="registration" onclick="redirectToEventDetik()">
+            Registrasi
+          </button>
         </div>
       </nav>
       <div class="logo-container">
@@ -45,7 +47,7 @@
       <button type="button" class="tentang">TENTANG ACARA</button>
     </header>
     <main>
-      <section class="card-1">
+      <section class="card-1" id="card-1">
         <div class="daftar gap-5">
           <div class="card-kanan">
             <div class="card">
@@ -53,8 +55,8 @@
                 src="Assets/map.png"
                 class="maps mx-auto"
                 alt="map"
-                width="480"
-                height="360"
+                width="420"
+                height="315"
               />
               <div class="card-body">
                 <h3 class="fun-title">10K FUN RUN</h3>
@@ -106,7 +108,9 @@
           </div>
         </div>
         <div class="button-daftar">
-          <button class="buttondaftar">DAFTAR SEKARANG</button>
+          <button class="buttondaftar" onclick="redirectToEventDetik()">
+            DAFTAR SEKARANG
+          </button>
         </div>
       </section>
 
@@ -137,7 +141,7 @@
         </marquee>
       </section>
 
-      <section class="carousel-section">
+      <section class="carousel-section" id="carousel">
         <div
           class="carousel d-flex flex-column align-items-center justify-content-center"
         >
@@ -182,7 +186,7 @@
           </button>
         </div>
       </section>
-      <section class="article-wrapper">
+      <section class="article-wrapper" id="article">
         <div class="article">
           <h3>ARTIKEL TERKAIT</h3>
           <div class="article-button-top justify-content-between">
@@ -290,7 +294,9 @@
             </div>
           </div>
           <div class="button-lihat">
-            <button class="buttonlihat">LIHAT LEBIH BANYAK</button>
+            <button class="buttonlihat" onclick="redirectToDetik()">
+              LIHAT LEBIH BANYAK
+            </button>
           </div>
         </div>
       </section>
