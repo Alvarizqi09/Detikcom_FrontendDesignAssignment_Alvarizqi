@@ -257,6 +257,12 @@ nav {
 
 .daftar .card-kiri .card-special .rounded-start {
   transition: transform 0.3s ease;
+  width: 150px;
+  height: 150px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 20px;
+  margin-top: 20px;
 }
 
 .daftar .card-kiri .card-special:hover .rounded-start {
