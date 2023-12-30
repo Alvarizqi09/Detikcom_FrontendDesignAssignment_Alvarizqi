@@ -667,7 +667,7 @@ footer .footer-isi .footer-bottom {
   margin-top: 5px;
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 430px) {
   body {
     overflow-x: hidden;
   }
@@ -839,7 +839,7 @@ footer .footer-isi .footer-bottom {
   }
 
   .carousel {
-    width: 450px;
+    width: 430px;
     height: 850px;
     display: inline-flex;
     margin: 53px auto;
@@ -1023,7 +1023,7 @@ footer .footer-isi .footer-bottom {
 
   footer {
     display: flex;
-    width: 450px;
+    width: 430px;
     height: 600px;
     padding: 50px 32px;
     flex-direction: column;
