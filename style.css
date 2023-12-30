@@ -162,12 +162,13 @@ nav {
   background: linear-gradient(237deg, #59ffb9 -30.09%, #326cff 71.21%);
   width: 550px;
   height: 611px;
+  border: none;
 }
 
 .daftar .card-kanan .card:hover {
   background: var(
     --primary-gradient,
-    linear-gradient(258deg, #326cff 0%, #59ffb9 100%)
+    linear-gradient(258deg, #326cff 0%, #59ffb9 120%)
   );
 }
 
@@ -213,7 +214,7 @@ nav {
 .daftar .card-kiri .card-gratis:hover {
   background: var(
     --primary-gradient,
-    linear-gradient(258deg, #326cff 0%, #59ffb9 100%)
+    linear-gradient(258deg, #326cff 0%, #59ffb9 130%)
   );
 }
 
@@ -244,14 +245,7 @@ nav {
 .daftar .card-kiri .card-special:hover {
   background: var(
     --primary-gradient,
-    linear-gradient(258deg, #326cff 0%, #59ffb9 100%)
-  );
-}
-
-.daftar .card-kiri .card-special:hover {
-  background: var(
-    --primary-gradient,
-    linear-gradient(258deg, #326cff 0%, #59ffb9 100%)
+    linear-gradient(258deg, #326cff 0%, #59ffb9 130%)
   );
 }
 
