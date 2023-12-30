@@ -127,3 +127,18 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+function toggleNav() {
+  const navMenu = document.querySelector(".content ul");
+  navMenu.classList.toggle("show");
+
+  const burgerIcon = document.querySelector(".burger-icon-img");
+  const closeIcon = document.querySelector(".close-icon-img");
+
+  burgerIcon.style.display = navMenu.classList.contains("show")
+    ? "none"
+    : "block";
+  closeIcon.style.display = navMenu.classList.contains("show")
+    ? "block"
+    : "none";
+}
