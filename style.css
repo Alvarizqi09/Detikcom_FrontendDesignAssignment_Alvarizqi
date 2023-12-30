@@ -1083,7 +1083,7 @@ footer .footer-isi .footer-bottom {
     display: flex;
     flex-direction: column;
     padding: 10px 5px;
-    width: 367px;
+    width: 430px;
   }
 
   footer .footer-isi .footer-about .about-kanan {
@@ -1094,11 +1094,11 @@ footer .footer-isi .footer-bottom {
     font-weight: 400;
     line-height: normal;
     height: 140px;
-    width: 367px;
+    width: 363px;
   }
 
   footer .footer-isi .footer-about .about-kiri {
-    width: 367px;
+    width: 430px;
     margin: 20px 80px;
   }
 
